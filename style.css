@@ -1,6 +1,6 @@
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
     margin: 0;
     padding: 0;
 }
@@ -16,26 +16,25 @@ body {
 
 .checkout-container h1 {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 24px;
-    color: #333;
+    margin-bottom: 20px;
+    color: #333333;
 }
 
 .checkout-form label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
 }
 
 .checkout-form input,
 .checkout-form select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .card-details {
@@ -49,13 +48,31 @@ body {
 
 .payment-icons {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
 }
 
 .payment-icons img {
     height: 30px;
+}
+
+.apple-pay-button {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.apple-pay-button::before {
+    content: " Pay";
+    font-weight: bold;
 }
 
 button[type="submit"] {
@@ -64,7 +81,7 @@ button[type="submit"] {
     background-color: #0073e6;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
 }
